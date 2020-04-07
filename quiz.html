@@ -1,6 +1,6 @@
 <head>
 
-    <title>CPT a 0.0.1</title>
+    <title>YAVT</title>
     <link rel="icon" type="x-icon" href="icon.png">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 
 
     <div class="text-center">
-        <h1 class="display-4">CPT测试</h1>
+        <h1 class="display-4">Yet Another Values Test</h1>
     </div>
     <hr class="my-auto">
     <div class="container">
@@ -30,19 +30,19 @@
             <div class="col-lg-4 col-12 mt-5">
                 <div class="card">
                     <div class="card-tittle mt-2">
-                        <h2 style="text-align:center;" id="question-number">Loading...</h2>
+                        <h2 style="text-align:center;" id="question-number">载入中……</h2>
                     </div>
                     <div class="card-body text-center">
                         <button type="button" onclick="next_question(1.0)" class="btn btn-success btn-lg btn-block"
-                            style="background-color: #1b5e20;">非常同意</button>
+                            style="background-color: #1b5e20;">强烈同意</button>
                         <button type="button" onclick="next_question(0.5)"
                             class="btn btn-success btn-lg btn-block mt-2">同意</button>
                         <button type="button" onclick="next_question(0.0)"
-                            class="btn btn-light btn-lg btn-block mt-2">中立/我不知道</button>
+                            class="btn btn-light btn-lg btn-block mt-2">中立/不确定</button>
                         <button type="button" onclick="next_question(-0.5)"
                             class="btn btn-danger btn-lg btn-block mt-2">反对</button>
                         <button type="button" onclick="next_question(-1.0)" class="btn btn-danger btn-lg btn-block mt-2"
-                            style="background-color: #b71c1c;">绝不同意</button>
+                            style="background-color: #b71c1c;">强烈反对</button>
                         <button type="button" onclick="prev_question()" id="back_button"
                             class="btn btn-primary btn-lg mt-4">返回</button>
                         <button type="button" class="btn btn-primary btn-lg mt-4" id="back_button_off"
@@ -70,7 +70,7 @@
         }
         function init_question() {
             document.getElementById("question-text").innerHTML = questions[qn].question;
-            document.getElementById("question-number").innerHTML = "问题第" + (qn + 1) + "个" + " 还有 " + (questions.length - qn - 1) + "个";
+            document.getElementById("question-number").innerHTML = "第" + (qn + 1) + "题" + " 剩余 " + (questions.length - qn - 1) + "题";
             if (prev_answer == null) {
                 document.getElementById("back_button").style.display = 'none';
                 document.getElementById("back_button_off").style.display = 'block';
