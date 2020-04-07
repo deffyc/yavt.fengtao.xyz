@@ -56,7 +56,7 @@ ideologies = [
     {
         "name": "新自由主义",
         "stats": {
-            "econ": 40,
+            "econ": 35,
             "dipl": 50,
             "govt": 60,
             "scty": 50
@@ -65,7 +65,7 @@ ideologies = [
     {
         "name": "自由意志主义",
         "stats": {
-            "econ": 20,
+            "econ": 10,
             "dipl": 50,
             "govt": 90,
             "scty": 75
