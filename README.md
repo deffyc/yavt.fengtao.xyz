@@ -1,2 +1,2 @@
-# 8values.github.io
-The 8values Political Quiz measures individuals' political values, including Equality, Might, Liberty, Tradition, Wealth, Peace, Authority, and Progress.
+# YetAnotherValuesTest
+YetAnotherValuesTest是一个基于8Values瞎鸡儿做的站队娱乐测试，切勿当真！
