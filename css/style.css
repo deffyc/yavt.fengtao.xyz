@@ -1,0 +1,92 @@
+div.axis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.bar {
+    height: 20pt;
+    line-height: 20pt;
+    padding: 0pt;
+    margin-top: 4pt;
+    margin-bottom: 0pt;
+    border-width: 0px;
+    border-right-width: 0px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #00000;
+    background-color: #eeeeee;
+    display: block;
+    width: 50%;
+}
+div.text-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    line-height: 0pt;
+    color: #222222;
+    display: inline-block;
+}
+div.equality {
+    background-color: #f44336;
+    text-align: left;
+    border-right-style: solid;
+}
+div.wealth {
+    background-color: #00897b;
+    text-align: right;
+    border-left-style: solid;
+}
+div.liberty {
+    background-color: #ffeb3b;
+    text-align: left;
+    border-right-style: solid;
+}
+div.authority {
+    background-color: #3f51b5;
+    text-align: right;
+    border-left-style: solid;
+}
+div.peace {
+    background-color: #03a9f4;
+    text-align: right;
+    border-left-style: solid;
+}
+div.might {
+    background-color: #ff9800;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.tradition {
+    background-color: #8bc34a;
+    text-align: right;
+    border-right-style: solid;
+}
+div .progress1 {
+    background-color: #9c27b0;
+    text-align: left;
+    border-right-style: solid;
+}
+div .ecology{
+    background-color: #00FF5D;
+    text-align: left;
+    border-left-style: solid;
+}
+div .production{
+    background-color: #C65D00;
+    text-align: right;
+    border-left-style: solid;
+}
+span.weight-300 {
+    font-weight: 300;
+}
+#banner {
+    border-color: #444444;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10pt;
+    display: block;
+    margin: 8pt;
+    margin-left: auto;
+    margin-right: auto;
+}
