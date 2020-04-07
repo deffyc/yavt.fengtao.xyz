@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CTP01</title>
+    <title>YAVT</title>
     <script type="application/javascript" src="ideologies.js">
     </script>
     <!-- Bootstrap -->
@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="card text-center p-4">
-<!--       <h2 class="display-4">最接近的意识形态： <span class="weight-300" id="ideology-label"></span></h2> -->
+
                     <h2>经济: <span class="weight-300" id="economic-label"></span></h2>
                     <div class="axis">
                         <img id="img-equality" src="value_images/equality.svg" height="100pt" />
@@ -78,8 +78,7 @@
                         </div>
                         <img id="img-tradition" src="value_images/Production.svg" height="100pt" />
                     </div>
-
-
+				    <h1>最接近的意识形态：<span class="weight-300" id="ideology-label"></span></h1>
                 </div>
             </div>
 
@@ -158,7 +157,7 @@
             dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.envo - ecology), 2)
+//            dist += Math.pow(Math.abs(ideologies[i].stats.envo - ecology), 2)
             if (dist < ideodist) {
                 ideology = ideologies[i].name
                 ideodist = dist
