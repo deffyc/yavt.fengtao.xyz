@@ -5,7 +5,7 @@
     <title>YAVT测试结果</title>
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    
+    <link href="css/index.css" rel="stylesheet">
     <title>YAVT</title>
     <script type="application/javascript" src="ideologies.js">
     </script>
@@ -14,8 +14,13 @@
 </head>
 
 <body>
+    <nav>
+        <a href="index.html">再来一遍</a>
+        <a href="#">Github</a>
+        <a href="#">反馈</a>
+      </nav>
     <div class="container text-center">
-        <h1 class"display-3">YAVT测试结果</h1>
+        <h1 class="display-3">YAVT测试结果</h1>
     </div>
     <div class="container">
         <div class="row">
@@ -24,60 +29,110 @@
 
                     <h2>经济: <span class="weight-300" id="economic-label"></span></h2>
                     <div class="axis">
-                        <img id="img-equality" src="value_images/equality.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p2"><img src="value_images/balance.svg" height="50pt"></span>
+                                <span class="wenzi">平等</span>
+                            </a>
+                        </div>
                         <div class="bar equality" id="bar-equality">
                             <div class="text-wrapper" id="equality"></div>
                         </div>
                         <div class="bar wealth" id="bar-wealth">
                             <div class="text-wrapper" id="wealth"></div>
                         </div>
-                        <img id="img-wealth" src="value_images/wealth.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p1"><img src="value_images/money.png" height="50pt"></span>
+                                <span class="wenzi">市场</span>
+                            </a>
+                        </div>
                     </div>
                     <h2>外事: <span class="weight-300" id="diplomatic-label"></span></h2>
                     <div class="axis">
-					<img id="img-peace" src="value_images/peace.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p3"><img src="value_images/globe.png" height="50pt"></span>
+                                <span class="wenzi">世界</span>
+                            </a>
+                        </div>
 					    <div class="bar peace" id="bar-peace">
                             <div class="text-wrapper" id="peace"></div>
                         </div>
                         <div class="bar might" id="bar-might">
                             <div class="text-wrapper" id="might"></div>
 						</div>
-					<img id="img-might" src="value_images/might.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p4"><img src="value_images/china.png" height="50pt"></span>
+                                <span class="wenzi">国家</span>
+                            </a>
+                        </div>
                     </div>
                     <h2>政治: <span class="weight-300" id="state-label"></span></h2>
                     <div class="axis">
-                        <img id="img-liberty" src="value_images/liberty.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p5"><img src="value_images/paper-plane (1).png" height="50pt"></span>
+                                <span class="wenzi">自由</span>
+                            </a>
+                        </div>
                         <div class="bar liberty" id="bar-liberty">
                             <div class="text-wrapper" id="liberty"></div>
                         </div>
                         <div class="bar authority" id="bar-authority">
                             <div class="text-wrapper" id="authority"></div>
                         </div>
-                        <img id="img-authority" src="value_images/authority.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p6"><img src="value_images/emperor.png" height="50pt"></span>
+                                <span class="wenzi">权威</span>
+                            </a>
+                        </div>
                     </div>
                     <h2>社会: <span class="weight-300" id="society-label"></span></h2>
                     <div class="axis">
-                        <img id="img-progress" src="value_images/progress.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p7"><img src="value_images/atom.png" height="50pt"></span>
+                                <span class="wenzi">进步</span>
+                            </a>
+                        </div>
                         <div class="bar progress1" id="bar-progress">
                             <div class="text-wrapper" id="progress"></div>
                         </div>
                         <div class="bar tradition" id="bar-tradition">
                             <div class="text-wrapper" id="tradition"></div>
                         </div>
-                        <img id="img-tradition" src="value_images/tradition.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p8"><img src="value_images/fengshui.png" height="50pt"></span>
+                                <span class="wenzi">传统</span>
+                            </a>
+                        </div>
                     </div>
                     <h2>环境: <span class="weight-300" id="environment-label"></span></h2>
                     <div class="axis">
-                        <img id="img-progress" src="value_images/Ecology.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p9"><img src="value_images/garden.png" height="50pt"></span>
+                                <span class="wenzi">生态</span>
+                            </a>
+                        </div>
                         <div class="bar ecology" id="bar-ecology">
                             <div class="text-wrapper" id="ecology"></div>
                         </div>
                         <div class="bar production" id="bar-production">
                             <div class="text-wrapper" id="production"></div>
                         </div>
-                        <img id="img-tradition" src="value_images/Production.svg" height="100pt" />
+                        <div class="wrapper">
+                            <a href="#">
+                                <span class="picture p10"><img src="value_images/factory.png" height="50pt"></span>
+                                <span class="wenzi">生产</span>
+                            </a>
+                        </div>
                     </div>
-				    <h1>最接近的意识形态：<span class="weight-300" id="ideology-label"></span></h1>
+				    <h2>最接近的意识形态：<h4 id="ideology-label"></div></h2>
                 </div>
             </div>
 
