@@ -6,26 +6,61 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>YAVT</title>
+   <link href="css/index.css" rel="stylesheet">
+   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
    <!-- Bootstrap -->
    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-
+   
 </head>
 
 <body>
+   <nav>
+      <a href="#">YAVT</a>
+      <a href="#">Github</a>
+      <a href="#">About us</a>
+    </nav>
    <div class="jumbotron jumbotron-fluid text-center">
       <h1 class="display-4">Yet Another Values Test</h1>
       <p class="lead">描述</p>
       <hr class="my-4">
       <p>描述</p>
       <p class="lead">
-         <button class="btn btn-primary btn-lg" onclick="location.href='instructions.html';">点击开始</button>
+         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#startmodal">点击开始</button>
       </p>
+      <!-- 模态框 -->
+  <div class="modal fade" id="startmodal">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+  
+       <!-- 模态框头部 -->
+       <div class="modal-header">
+         <h4 class="modal-title">YAVT测试说明</h4>
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+  
+       <!-- 模态框主体 -->
+       <div class="modal-body">
+         <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法。</p>
+         <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
+       </div>
+  
+       <!-- 模态框底部 -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary" onclick="location.href='quiz.html'">知道了！</button>
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
+       </div>
+  
+     </div>
+   </div>
+ </div>
+ 
    </div>
    <div class="container">
       <div class="row text-center">
-         <div class="col-lg-6 offset-lg-3">基于<strong>8values</strong><br>使用bootstraps4作为前端框架<br><strong><a
-                  href="#">github</strong>. </a></div>
+         <div class="col-lg-6 offset-lg-3">基于<strong>value8</strong><br>使用bootstrapv4作为前端框架<br>
       </div>
       <br>
       <hr>
