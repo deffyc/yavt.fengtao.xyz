@@ -250,7 +250,7 @@ questions = [
         }
     },
     {
-        "question": "各取所需，各尽所能（张献忠：表述有点不清楚）",
+        "question": "各取所需，各尽所能",
         "effect": {
             "econ": 5,
             "dipl": 0,
@@ -260,7 +260,7 @@ questions = [
         }
     },
     {
-        "question": "（主语？）现在为保护环境所做的努力还不够",
+        "question": "中国现在为保护环境所做的努力还不够",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -387,16 +387,6 @@ questions = [
             "dipl": 0,
             "govt": 10,
             "scty": 0,
-            "envo": 1
-        }
-    },
-    {
-        "question": "秦朝以后大一统抑制了文化的创新",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 5,
             "envo": 0
         }
     },
@@ -407,7 +397,7 @@ questions = [
             "dipl": 0,
             "govt": 5,
             "scty": 5,
-            "envo": 2
+            "envo": 0
         }
     },
         {
@@ -547,7 +537,7 @@ questions = [
             "dipl": 0,
             "govt": -5,
             "scty": -10,
-            "envo": -1
+            "envo": 0
         }
     }
 

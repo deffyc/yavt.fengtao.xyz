@@ -11,8 +11,8 @@ ideologies = [
     {
         "name": "民主社会主义",
         "stats": {
-            "econ": 75,
-            "dipl": 75,
+            "econ": 80,
+            "dipl": 80,
             "govt": 75,
             "scty": 80,
         }
@@ -42,6 +42,15 @@ ideologies = [
             "dipl": 30,
             "govt": 30,
             "scty": 30
+        }
+    },
+	    {
+        "name": "社会民主主义",
+        "stats": {
+            "econ": 60,
+            "dipl": 50,
+            "govt": 75,
+            "scty": 70
         }
     },
     {
@@ -123,6 +132,15 @@ ideologies = [
             "dipl": 30,
             "govt": 25,
             "scty": 10
+        }
+    },
+	    {
+        "name": "正统马克思主义",
+        "stats": {
+            "econ": 90,
+            "dipl": 90,
+            "govt": 75,
+            "scty": 85
         }
     },
 ];
