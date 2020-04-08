@@ -16,7 +16,7 @@ h2{
     -webkit-border-radius: 50%;
     border-radius: 50%;
     font-size: 24px;
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: #777;
     background: transparent none repeat scroll 0% 0%;
@@ -27,7 +27,7 @@ h2{
     
 }
 
-.picture.p1{
+/*.picture.p1{
     background-image: linear-gradient(to bottom right,rgb(11,98,246),rgb(3,49,115));
    
    
@@ -76,7 +76,7 @@ h2{
     
 
 }
-
+*/
 
 
 .wenzi {
@@ -106,15 +106,15 @@ h2{
 div.bar {
     transform: translateY(-35%);
     position:flex;
-    height: 36pt;
-    line-height: 36pt;
+    height: 10pt;
+    line-height: 10pt;
     padding: 8pt;
     margin-top: 4pt;
     margin-bottom: 2pt;
     border-width: 2px;
     border-right-width: 1px;
     
-    border:1px solid;
+   
     border-radius:20px;
     border-color: #555;
     background-color: #eeeeee;
@@ -125,6 +125,7 @@ div.bar {
     z-index:1;
 }
 div.text-wrapper {
+	transform: translateY(-35%);
     font-family: 'Montserrat', sans-serif;
     font-size: 15pt;
     line-height: 20pt;
@@ -186,6 +187,7 @@ span.weight-300 {
     font-weight: 300;
 }
 #banner {
+	
     border-color: #444444;
     border-style: solid;
     border-width: 10px;
