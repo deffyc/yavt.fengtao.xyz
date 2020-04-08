@@ -18,11 +18,11 @@ function setBarValue(name, value) {
     }
 }
 
-econArray = ["共产主义", "社会主义", "社会", "中立", "市场", "资本主义", "自由放任"]
+econArray = ["共产主义", "社会主义", "社会优先", "中立", "市场优先", "资本主义", "自由放任"]
 diplArray = ["世界主义", "国际主义", "和平", "中立", "爱国", "民族主义", "沙文主义"]
 govtArray = ["无政府主义", "自由意志主义", "自由主义", "中立", "国家主义", "威权主义", "极权主义"]
-sctyArray = ["革命", "进步", "改良", "中立", "保守", "传统", "反动"]
-envoArray = ["深绿", "生态主义", "优先环保", "中立", "优先发展", "生产主义", "环保怀疑主义"]
+sctyArray = ["变革", "进步", "改良", "中立", "保守", "传统", "反动"]
+envoArray = ["深绿", "生态主义", "环保优先", "中立", "发展优先", "生产主义", "环保怀疑主义"]
 function setLabel(val, ary) {
     if (val > 100) { return "" } else
         if (val > 90) { return ary[0] } else
@@ -67,8 +67,8 @@ for (var i = 0; i < ideologies.length; i++) {
     dist = 0
     dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
     dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 2)
+    dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
+    dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
 //            dist += Math.pow(Math.abs(ideologies[i].stats.envo - ecology), 2)
     if (dist < ideodist) {
         ideology = ideologies[i].name

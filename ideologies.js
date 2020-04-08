@@ -57,18 +57,36 @@ ideologies = [
         "name": "社会自由主义",
         "stats": {
             "econ": 60,
-            "dipl": 50,
-            "govt": 75,
-            "scty": 70
+            "dipl": 60,
+            "govt": 60,
+            "scty": 80
+        }
+    },
+	    {
+        "name": "自由主义",
+        "stats": {
+            "econ": 50,
+            "dipl": 60,
+            "govt": 60,
+            "scty": 60
+        }
+    },
+	    {
+        "name": "古典自由主义",
+        "stats": {
+            "econ": 30,
+            "dipl": 60,
+            "govt": 60,
+            "scty": 80
         }
     },
     {
         "name": "新自由主义",
         "stats": {
-            "econ": 35,
-            "dipl": 50,
-            "govt": 60,
-            "scty": 50
+            "econ": 30,
+            "dipl": 30,
+            "govt": 50,
+            "scty": 60
         }
     },
     {
@@ -83,10 +101,10 @@ ideologies = [
     {
         "name": "新保守主义",
         "stats": {
-            "econ": 30,
-            "dipl": 25,
+            "econ": 20,
+            "dipl": 20,
             "govt": 40,
-            "scty": 25
+            "scty": 20
         }
     },
     {

@@ -310,16 +310,6 @@ questions = [
         }
     },
     {
-        "question": "如果国民党获得内战胜利，中国会发展得更好。",
-        "effect": {
-            "econ": 0,
-            "dipl": 5,
-            "govt": 5,
-            "scty": -5,
-            "envo": 0,
-        }
-    },
-    {
         "question": "我反对黑人（有必要添加限定？）移民来到中国",
         "effect": {
             "econ": 0,
@@ -342,10 +332,10 @@ questions = [
     {
         "question": "西方的发达主要凭借殖民掠夺",
         "effect": {
-            "econ": 0,
+            "econ": 5,
             "dipl": 0,
             "govt": 0,
-            "scty": -5,
+            "scty": 0,
             "envo": 0,
         }
     },
@@ -447,16 +437,6 @@ questions = [
             "dipl": 0,
             "govt": -5,
             "scty": 0,
-            "envo": 0
-        }
-    },
-        {
-        "question": "通过税收再分配是对人财产权的侵犯",
-        "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -5,
             "envo": 0
         }
     },
