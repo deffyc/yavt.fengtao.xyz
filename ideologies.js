@@ -23,7 +23,7 @@ ideologies = [
             "econ": 90,
             "dipl": 90,
             "govt": 75,
-            "scty": 85
+            "scty": 85,
         }
     },
     {
@@ -32,7 +32,7 @@ ideologies = [
             "econ": 90,
             "dipl": 100,
             "govt": 50,
-            "scty": 80
+            "scty": 80,
         }
     },
 	    {
@@ -41,16 +41,16 @@ ideologies = [
             "econ": 90,
             "dipl": 70,
             "govt": 35,
-            "scty": 70
+            "scty": 70,
         }
     },
     {
-        "name": "马列主义",
+        "name": "马克思列宁主义",
         "stats": {
             "econ": 90,
             "dipl": 40,
             "govt": 20,
-            "scty": 50
+            "scty": 50,
         }
     },
     {
@@ -59,7 +59,7 @@ ideologies = [
             "econ": 60,
             "dipl": 30,
             "govt": 30,
-            "scty": 70
+            "scty": 70,
         }
     },
 	    {
@@ -77,7 +77,7 @@ ideologies = [
             "econ": 65,
             "dipl": 65,
             "govt": 65,
-            "scty": 80
+            "scty": 80,
         }
     },
     {
@@ -86,7 +86,7 @@ ideologies = [
             "econ": 60,
             "dipl": 60,
             "govt": 60,
-            "scty": 80
+            "scty": 80,
         }
     },
 	    {
@@ -95,7 +95,7 @@ ideologies = [
             "econ": 50,
             "dipl": 60,
             "govt": 60,
-            "scty": 60
+            "scty": 60,
         }
     },
 	    {
@@ -104,7 +104,7 @@ ideologies = [
             "econ": 20,
             "dipl": 60,
             "govt": 60,
-            "scty": 70
+            "scty": 70,
         }
     },
     {
@@ -113,25 +113,25 @@ ideologies = [
             "econ": 30,
             "dipl": 30,
             "govt": 50,
-            "scty": 60
+            "scty": 60,
         }
     },
-    {
+   {
         "name": "自由意志主义",
         "stats": {
             "econ": 40,
             "dipl": 60,
             "govt": 80,
-            "scty": 70
+            "scty": 70,
         }
     },
-	    {
+ 	    {
         "name": "保守主义",
         "stats": {
             "econ": 30,
             "dipl": 40,
             "govt": 40,
-            "scty": 20
+            "scty": 20,
         }
     },
     {
@@ -140,7 +140,7 @@ ideologies = [
             "econ": 20,
             "dipl": 20,
             "govt": 40,
-            "scty": 20
+            "scty": 20,
         }
     },
 	    {
@@ -149,34 +149,34 @@ ideologies = [
             "econ": 20,
             "dipl": 30,
             "govt": 60,
-            "scty": 10
+            "scty": 10,
         }
     },
-    {
+   {
         "name": "右翼民粹主义",
         "stats": {
             "econ": 40,
             "dipl": 30,
             "govt": 30,
-            "scty": 30
+            "scty": 30,
         }
     },
-    {
+   {
         "name": "威权资本主义",
         "stats": {
             "econ": 20,
             "dipl": 50,
             "govt": 20,
-            "scty": 40
+            "scty": 40,
         }
     },
-    {
+      {
         "name": "新儒家",
         "stats": {
             "econ": 50,
             "dipl": 30,
             "govt": 25,
-            "scty": 10
+            "scty": 10,
         }
     },
 	    {
@@ -185,16 +185,16 @@ ideologies = [
             "econ": 0,
             "dipl": 50,
             "govt": 100,
-            "scty": 50
+            "scty": 50,
         }
-    }
-    {
+    },
+   {
         "name": "法西斯主义",
         "stats": {
             "econ": 35,
             "dipl": 20,
             "govt": 20,
-            "scty": 20
+            "scty": 20,
         }
     },
 	    {
@@ -203,7 +203,7 @@ ideologies = [
             "econ": 40,
             "dipl": 0,
             "govt": 0,
-            "scty": 5
+            "scty": 5,
         }
     },
 ];
