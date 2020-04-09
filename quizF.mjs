@@ -15,7 +15,7 @@ for (var i = 0; i < questions.length; i++) {
 function init_question() {
     document.getElementById("question-text").innerHTML = questions[qn].question;
     document.getElementById("question-number").innerHTML = "第" + (qn + 1) + "题" + " 剩余 " + (questions.length - qn - 1) + "题";
-    if (prev_answer == null) {
+    if (qn == 0) {
         document.getElementById("back_button").style.display = 'none';
         document.getElementById("back_button_off").style.display = 'block';
     } else {
@@ -40,7 +40,7 @@ function next_question(mult) {
     }
 }
 function prev_question() {
-    if (prev_answer == null) {
+    if (qn == 0) {
         return;
     }
     qn--;
@@ -49,7 +49,7 @@ function prev_question() {
     govt -= prev_answer * questions[qn].effect.govt;
     scty -= prev_answer * questions[qn].effect.scty;
     envo -= prev_answer * questions[qn].effect.envo;
-    prev_answer = null;
+    
     init_question();
 
 }
