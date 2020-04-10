@@ -110,9 +110,9 @@ questions = [
         }
     },
     {
-        "question": "政府应提高最低工资以保障劳动者的权利。",
+        "question": "为了确保经济的发展，可以在一定程度上牺牲劳动者的权益。",
         "effect": {
-            "econ": 5,
+            "econ": -10,
             "dipl": 0,
             "govt": 0,
             "scty": 0,
