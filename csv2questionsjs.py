@@ -24,11 +24,11 @@ if __name__ == '__main__':
             {
                 "question": row[question_name],
                 "effect": {
-                    "econ": row[econ_name],
-                    "dipl": row[dipl_name],
-                    "govt": row[govt_name],
-                    "scty": row[scty_name],
-                    "envo": row[envo_name],
+                    "econ": int(row[econ_name]),
+                    "dipl": int(row[dipl_name]),
+                    "govt": int(row[govt_name]),
+                    "scty": int(row[scty_name]),
+                    "envo": int(row[envo_name]),
                 }
             }
         )
