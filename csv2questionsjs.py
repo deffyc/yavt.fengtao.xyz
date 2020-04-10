@@ -34,4 +34,4 @@ if __name__ == '__main__':
         )
     json_str = json.dumps(questions, ensure_ascii=False, indent=4)
     with open(question_js_file, 'w') as f:
-        f.write('questions=' + json_str)
+        f.write('questions = ' + json_str)
