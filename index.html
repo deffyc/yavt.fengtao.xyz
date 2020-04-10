@@ -17,19 +17,32 @@
 </head>
 
 <body>
+   <!-- Navbar -->
    <nav>
       <a href="#">YAVT</a>
-      <a href="#">Github</a>
+      <a href="https://github.com/yetanothervaluestest/YetAnotherValuesTest.github.io">Github</a>
       <a href="#">About us</a>
     </nav>
+
+    <!-- Title -->
    <div class="jumbotron jumbotron-fluid text-center">
       <h1 class="display-4">Yet Another Values Test</h1>
       <p class="lead">这是什么？</p>
       <hr class="my-4">
       <p>Yet Another Values Test是一个基于8Values瞎鸡儿做的在中国语境下的站队娱乐测试。</p>
       <p class="lead">
-         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#startmodal">点击开始</button>
+         <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
       </p>
+      <!-- QR Code -->
+      <div id="qrcode-container">
+        <img src="SVGS/qrcode.svg" height="300" width="300" />
+        <p>
+            <a class="btn btn-success btn-lg shadow text-white"href="shareYAVT.png" download>
+            保存二维码
+            </a>
+        </p>
+      </div>
+
       <!-- 模态框 -->
   <div class="modal fade" id="startmodal">
    <div class="modal-dialog modal-lg">

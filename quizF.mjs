@@ -1,66 +1,74 @@
-var max_econ, max_dipl, max_govt, max_scty, max_envo; // Max possible scores
-max_econ = max_dipl = max_govt = max_scty = max_envo = 0;
-var econ, dipl, govt, scty, envo; // User's scores
-econ = dipl = govt = scty = envo = 0;
-var qn = 0; // Question number
-var prev_answer = null;
-init_question();
-for (var i = 0; i < questions.length; i++) {
-    max_econ += Math.abs(questions[i].effect.econ)
-    max_dipl += Math.abs(questions[i].effect.dipl)
-    max_govt += Math.abs(questions[i].effect.govt)
-    max_scty += Math.abs(questions[i].effect.scty)
-    max_envo += Math.abs(questions[i].effect.envo)
-}
-function init_question() {
-    document.getElementById("question-text").innerHTML = questions[qn].question;
-    document.getElementById("question-number").innerHTML = "第" + (qn + 1) + "题" + " 剩余 " + (questions.length - qn - 1) + "题";
-    if (qn == 0) {
-        document.getElementById("back_button").style.display = 'none';
-        document.getElementById("back_button_off").style.display = 'block';
-    } else {
-        document.getElementById("back_button").style.display = 'block';
-        document.getElementById("back_button_off").style.display = 'none';
+$(document).ready(function () {  // Use closure, no globals
+    let scores;
+    let current_question = 0;
+    let questions;
+
+    $.getJSON("questions.json", initialize).fail((xdr, err)=>{console.log("load error: "+err)});
+
+    function initialize(jsonLoaded){
+        questions = jsonLoaded;
+        scores = new Array(questions.length).fill(0);
+
+        $("#btn-strongly-positive")
+            .click(()=>{ scores[current_question] = +1.0; next_question() });
+        $("#btn-positive")          
+            .click(()=>{ scores[current_question] = +0.5; next_question() });
+        $("#btn-uncertain")        
+            .click(()=>{ scores[current_question] =  0.0; next_question() });
+        $("#btn-negative")         
+            .click(()=>{ scores[current_question] = -0.5; next_question() });
+        $("#btn-strongly-negative")
+            .click(()=>{ scores[current_question] = -1.0; next_question() });
+
+        $("#btn-prev").click(()=>{ prev_question() });
+
+        // Shuffle Quesions
+        questions.sort(() => Math.random() - 0.5);
+
+        render_question();
     }
 
-}
-
-function next_question(mult) {
-    econ += mult * questions[qn].effect.econ
-    dipl += mult * questions[qn].effect.dipl
-    govt += mult * questions[qn].effect.govt
-    scty += mult * questions[qn].effect.scty
-    envo += mult * questions[qn].effect.envo
-    qn++;
-    prev_answer = mult;
-    if (qn < questions.length) {
-        init_question();
-    } else {
-        results();
+    function render_question() {
+        $("#question-text").html(questions[current_question].question);
+        $("#question-number").html(`第 ${current_question + 1} 题 剩余 ${questions.length - current_question - 1} 题`);
+        if (current_question == 0) {
+            $("#back_button").attr("disable");
+        } else {
+            $("#back_button").removeAttr("disable");
+        }
     }
-}
-function prev_question() {
-    if (qn == 0) {
-        return;
-    }
-    qn--;
-    econ -= prev_answer * questions[qn].effect.econ;
-    dipl -= prev_answer * questions[qn].effect.dipl;
-    govt -= prev_answer * questions[qn].effect.govt;
-    scty -= prev_answer * questions[qn].effect.scty;
-    envo -= prev_answer * questions[qn].effect.envo;
-    
-    init_question();
 
-}
-function calc_score(score, max) {
-    return (100 * (max + score) / (2 * max)).toFixed(1)
-}
-function results() {
-    location.href = `results.html`
-        + `?e=${calc_score(econ, max_econ)}`
-        + `&d=${calc_score(dipl, max_dipl)}`
-        + `&g=${calc_score(govt, max_govt)}`
-        + `&s=${calc_score(scty, max_scty)}`
-        + `&i=${calc_score(envo, max_envo)}`
-}
+    function next_question() {
+        if (current_question < questions.length - 1) {
+            current_question++;
+            render_question();
+        } else {
+            results();
+        }
+    }
+
+    function prev_question() {
+        if (current_question != 0) {
+            current_question--;
+            render_question();
+        }
+
+    }
+
+    function results() {
+        let score = {econ: 0, dipl: 0, govt: 0, scty: 0, envo: 0};
+        let max_score = {...score};
+        for (let i = 0; i < scores.length; i += 1 ) {
+            for (let key of Object.keys(score)){
+                score[key] += scores[i] * questions[i].effect[key];
+                max_score[key] += Math.abs(questions[i].effect[key]);
+            }    
+        }
+
+        for (let key of Object.keys(max_score)){
+            score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
+            score[key] = Math.round(score[key] * 100);
+        }  
+        location.href = "results.html?" + $.param(score); 
+    }
+});

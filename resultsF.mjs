@@ -34,11 +34,12 @@ function setLabel(val, ary) {
                                 if (val >= 0) { return ary[6] } else { return "" }
 }
 
-equality = getQueryVariable("e")
-peace = getQueryVariable("d")
-liberty = getQueryVariable("g")
-progress = getQueryVariable("s")
-ecology = getQueryVariable("i")
+equality = getQueryVariable("econ")
+peace = getQueryVariable("dipl")
+liberty = getQueryVariable("govt")
+progress = getQueryVariable("scty")
+ecology = getQueryVariable("envo")
+
 wealth = (100 - equality).toFixed(1)
 might = (100 - peace).toFixed(1)
 authority = (100 - liberty).toFixed(1)

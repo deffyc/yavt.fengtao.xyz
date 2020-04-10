@@ -8,14 +8,11 @@
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <script type="application/javascript" src="questions.js">
+    <script type="application/javascript" src="js/jquery-3.4.1.min.js">
     </script>
 </head>
 
 <body>
-
-
-
     <div class="text-center">
         <h1 class="display-4">Yet Another Values Test</h1>
     </div>
@@ -33,20 +30,20 @@
                         <h2 style="text-align:center;" id="question-number">载入中……</h2>
                     </div>
                     <div class="card-body text-center">
-                        <button type="button" onclick="next_question(1.0)" class="btn btn-success btn-lg btn-block"
+                        <button type="button" id="btn-strongly-positive"
+                            class="btn btn-success btn-lg btn-block"
                             style="background-color: #1b5e20;">强烈同意</button>
-                        <button type="button" onclick="next_question(0.5)"
+                        <button type="button" id="btn-positive"
                             class="btn btn-success btn-lg btn-block mt-2">同意</button>
-                        <button type="button" onclick="next_question(0.0)"
+                        <button type="button" id="btn-uncertain"
                             class="btn btn-light btn-lg btn-block mt-2">中立/不确定</button>
-                        <button type="button" onclick="next_question(-0.5)"
+                        <button type="button" id="btn-negative"
                             class="btn btn-danger btn-lg btn-block mt-2">反对</button>
-                        <button type="button" onclick="next_question(-1.0)" class="btn btn-danger btn-lg btn-block mt-2"
+                        <button type="button" id="btn-strongly-negative"
+                            class="btn btn-danger btn-lg btn-block mt-2"
                             style="background-color: #b71c1c;">强烈反对</button>
-                        <button type="button" onclick="prev_question()" id="back_button"
+                        <button type="button" id="btn-prev"
                             class="btn btn-primary btn-lg mt-4">返回</button>
-                        <button type="button" class="btn btn-primary btn-lg mt-4" id="back_button_off"
-                            disabled>返回</button>
                     </div>
                 </div>
             </div>
