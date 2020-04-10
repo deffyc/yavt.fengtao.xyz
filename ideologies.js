@@ -191,7 +191,7 @@ ideologies = [
    {
         "name": "法西斯主义",
         "stats": {
-            "econ": 35,
+            "econ": 40,
             "dipl": 20,
             "govt": 20,
             "scty": 20,

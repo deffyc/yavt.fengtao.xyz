@@ -1,32 +1,22 @@
 questions = [
     {
-        "question": "人应该根据自己心中的正义感行动，即使那会违反现有的法律。",
+        "question": "面对公共危机事件，哪怕可能会引发民众的恐慌，政府也不应该瞒报实情。",
         "effect": {
             "econ": 0,
             "dipl": 0,
-            "govt": 5,
+            "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "生不生、生多少小孩是每个家庭的自由，政府与社会不应强制干涉。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 10,
             "scty": 5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "在COVID-19疫情中，政府不应强行干预市场上口罩的价格。",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "只要员工同意，企业就有权规定任意长的工作时间。",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0,
-            "envo": 0,
+            "envo": 0
         }
     },
     {
@@ -34,463 +24,369 @@ questions = [
         "effect": {
             "econ": 0,
             "dipl": -5,
+            "govt": -5,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "只有高素养公民才能参与民主政治。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
             "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "西方多党民主制下相互扯皮，效率低下。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "批评和监督政府的言论应当被宽容，政府不应干涉。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "政治领袖的形象可以作为文艺作品的丑化对象。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "关系到国家安全和国民经济命脉的行业必须国有。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "政府应当提高社会福利支出，改善低收入者的生活水平。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "政府应当提高粮食收购价格，以保障农民的利益。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "金融业没有创造社会财富。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "政府应提高最低工资以保障劳动者的权利。",
+        "effect": {
+            "econ": 5,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "教育和医疗等公共事业应当限制其私有化。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "不应当打击市场经济中自然形成的垄断。",
+        "effect": {
+            "econ": -10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "不涉及国家安全和国民经济命脉的亏损国企应当私有化。",
+        "effect": {
+            "econ": -5,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "市场规则完善的情况下，劳动者也常常未得到与其付出相称的工资。",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "大部分人享受到的经济全球化的好处少于其害处。",
+        "effect": {
+            "econ": 5,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "政府和社会无权干涉成年人之间自愿且安全的性行为。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 5,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "父母不应当干涉子女的婚嫁。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "同性伴侣婚姻应当合法化。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中华道德传统对当今社会总体利大于弊。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
             "scty": -5,
-            "envo": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "司法判决不应当受民意或舆论压力影响。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "与现代主流医学相比，中国传统医学更值得信任。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "当法律未能充分制止罪恶行为时，人民群众有权自发对罪恶行为进行制裁。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "律师即使明知被辩护人的犯罪事实也应当尽力为其进行辩护。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "我通常听从长辈的意见，因为他们的阅历丰富，尽管这违背了我原本的意愿。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": -5,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中国应当援助有困难的国家。",
+        "effect": {
+            "econ": 0,
+            "dipl": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "国家统一和领土完整高于一切。",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中国应使用一切可能的手段来维护国家利益。",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中国的工业体系必须自力更生，重要行业一定要掌握在自己手里。",
+        "effect": {
+            "econ": 5,
+            "dipl": -5,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中美冲突本质是中华文明和西方文明的冲突。",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "学校应当对学生进行爱国主义教育。",
+        "effect": {
+            "econ": 0,
+            "dipl": -5,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
         }
     },
     {
         "question": "为了快速发展经济，“先污染后治理”是可取的。",
         "effect": {
-            "econ": 5,
+            "econ": 0,
             "dipl": 0,
             "govt": 0,
             "scty": 0,
-            "envo": -5,
+            "envo": -10
         }
     },
     {
-        "question": "人类的进步由少数的精英推动，而不是大众。",
+        "question": "对于人类整体而言，全球变暖是迫在眉睫的威胁。",
         "effect": {
             "econ": 0,
             "dipl": 0,
-            "govt": -10,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "相比其他族裔，亚（华）裔的基因更加优秀。",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "为了应对环境问题，中国应该严格限制人均碳排放。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10,
-            "envo": 10,
-        }
-    },
-    {
-        "question": "随着社会的发展，家庭这个概念最终会消失。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "婚前性行为是不道德的。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "离婚冷静期是一种对女性的不公平。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "女性专属停车位是对女性的歧视（对社会弱势群体的特别措施是对其的歧视）",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "个人通过利息和租金获得的收入应该被取缔。",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": -5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "通过税收来进行财富的再分配是对私有财产的一种侵犯。",
-        "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "如果君主制能够让我生活地更好，我会选择开明君主的专制而不是民主制。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "应该对性少数群体实施强制矫正。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "美国不会因为我们换一个政体就和我们成为朋友。",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "先发展经济，之后民主自然会到来。",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "个人品行能力的差异可以解释贫富差距。（穷人之所以贫穷，是因为有“穷人思维”）",
-        "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "劳动不分高低贵贱。",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "我们的工业体系必须自力更生，重要行业一定要掌握在自己手里",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
             "govt": 0,
             "scty": 0,
-            "envo": 0,
+            "envo": 10
         }
     },
     {
-        "question": "美国的富裕建立在对第三世界剥削的基础上。",
+        "question": "为了环保，我可以接受使用清洁能源造成的成本增加。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 10
+        }
+    },
+    {
+        "question": "人为造成的全球气候变化不存在。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": -10
+        }
+    },
+    {
+        "question": "人类行动造成的物种灭绝是不可容忍的，我们应当竭尽全力阻止这种事的发生。",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 10
+        }
+    },
+    {
+        "question": "政府应该对企业进行更严格的环境管制。",
         "effect": {
             "econ": 5,
             "dipl": 0,
             "govt": 0,
             "scty": 0,
-            "envo": 0,
+            "envo": 10
         }
     },
     {
-        "question": "中国分裂或自治比大一统要好。",
+        "question": "哪怕其他国家没有完成，中国仍要实现在国际减排合约上的承诺。",
         "effect": {
             "econ": 0,
             "dipl": 5,
-            "govt": 10,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "市场越自由，人民越自由。",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
             "govt": 0,
             "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "中国传统价值观应该得到保留。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "中国现在为保护环境所做的努力还不够",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0,
-            "envo": 5,
-        }
-    },
-    {
-        "question": "全球变暖是迫在眉睫的威胁",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0,
-            "envo": 10,
-        }
-    },
-    {
-        "question": "我反对转基因食品",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0,
-            "envo": 5,
-        }
-    },
-    {
-        "question": "元朝和清朝不是中国，因为当时汉人处于亡国奴状态。",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "我反对黑人移民来到中国",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": 0,
-            "scty": -5,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "种族之间存在勤劳、聪明程度的优劣差异",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "西方的发达主要凭借殖民掠夺",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "工人应该有罢工的权利",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "我反对电影、游戏审查制度",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-    {
-        "question": "改革开放是一个明智之举",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 0,
-            "envo": 0,
-        }
-    },
-
-    {
-        "question": "对于中国政府而言，比起中央统一指挥，增大地方政府自主权能更好服务当地人民",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
-        "question": "秦朝以后大一统抑制了文化的创新",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 5,
-            "envo": 0
-        }
-    },
-        {
-        "question": "当前中国司法是有利于既得利益集团的",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 5,
-            "envo": 0
-        }
-    },
-        {
-        "question": "一个社会的政治、文化是受经济因素决定的",
-        "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": -5,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-        {
-        "question": "在社会中保持等级制度，一部分人服从于另一部分人是必要的",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "福利国家会削弱人的工作积极性",
-        "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": -5,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-        {
-        "question": "国有经济一定会变成少数权贵所有，不可能实现公有（国有制距离公有制还有很长路要走，而且充满了困难）",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 5,
-            "scty": 5,
-            "envo": 0
-        }
-    },
-        {
-        "question": "现代社会中的很多弊端，都是由于我们背离了传统导致的。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "为了保护他们的人权，我们应该打开国门接纳难民",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "一切道德归根结底来自宗教",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "在评判一个社会问题时，道德评判比法律评判更重要。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "为了社会的和谐与有序，必须制定法律以外的礼法规范人的行为。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "在过去的七十年或一百余年中，中国的传统文化不断消逝，这造成了严重的社会问题。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-        {
-        "question": "“为尊者讳”的积极意义大于消极意义，我们不应该对领导人有任何不敬言行。领导犯错误的时候我们不应该直接批评，必须委婉地指出。",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10,
-            "envo": 0
+            "envo": 10
         }
     }
-
-
-
-];
+]
