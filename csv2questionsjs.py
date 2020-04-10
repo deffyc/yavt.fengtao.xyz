@@ -5,11 +5,11 @@ import pandas as pd
 csv_file = 'question-value.csv'
 question_js_file = 'questions.js'
 
-question_name = 'content'
-econ_name = '经济'
-dipl_name = '外事'
-govt_name = '政治'
-scty_name = '文化'
+question_name = '内容'
+econ_name = '平等'
+dipl_name = '世界'
+govt_name = '自由'
+scty_name = '进步'
 envo_name = '生态'
 
 if __name__ == '__main__':
@@ -18,7 +18,8 @@ if __name__ == '__main__':
     print(df)
     questions = []
     for _, row in df.iterrows():
-        print(row)
+        if row[question_name] == 0:
+            continue
         questions.append(
             {
                 "question": row[question_name],
