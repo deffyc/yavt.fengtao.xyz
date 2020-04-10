@@ -1,6 +1,7 @@
 import json
 
 import pandas as pd
+import sys
 
 csv_file = 'question-value.csv'
 question_js_file = 'questions.js'
@@ -16,13 +17,14 @@ if __name__ == '__main__':
     df = pd.read_csv(csv_file)
     df.fillna(0, inplace=True)
     print(df)
+    default_encoding = sys.getdefaultencoding()
     questions = []
     for _, row in df.iterrows():
         if row[question_name] == 0:
             continue
         questions.append(
             {
-                "question": row[question_name],
+                "question": row[question_name].encode(default_encoding).decode('utf-8'),
                 "effect": {
                     "econ": int(row[econ_name]),
                     "dipl": int(row[dipl_name]),
@@ -34,4 +36,4 @@ if __name__ == '__main__':
         )
     json_str = json.dumps(questions, ensure_ascii=False, indent=4)
     with open(question_js_file, 'w') as f:
-        f.write('questions = ' + json_str)
+        f.write('questions = ' + json_str + ';')
