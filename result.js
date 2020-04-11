@@ -45,8 +45,14 @@ $(document).ready(function(){
             leading: '1em'
         };
         const font_ideology = {
-            family: '',
+            family: 'Helvetica',
             size: 40,
+            anchor: 'start',
+            weight: 300
+        };
+        const font_title = {
+            family: "monospace",
+            size: 16,
             anchor: 'start'
         }
 
@@ -111,12 +117,33 @@ $(document).ready(function(){
             x: 50,
             y: y + 30,
             fill: "black"
-        }).font(font_ideology);
+        }).font(font_l);
         svg.text(ideology).attr({
             x: 100,
-            y: y + 80,
+            y: y + 60,
             fill: "black"
         }).font(font_ideology);
+        svg.text("Yet Another Values Test").attr({
+            x: 20,
+            y: height - 60,
+            fill: "black"
+        }).font(font_title);
+        svg.text("yavt.fengtao.xyz").attr({
+            x: 20,
+            y: height - 40,
+            fill: "black"
+        }).font(font_title);
+        svg.image("SVGS/qrcode.svg").attr({
+            x: 360,
+            y: 530,
+            width: 200,
+            height: 200,
+        });
+        svg.text("基于8 value的倾向测试").attr({
+            x: 370,
+            y: height - 60,
+            fill: "black"
+        }).font(font_title);
     }
 
     function vecDistance( vec1, vec2 ){
