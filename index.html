@@ -2,115 +2,116 @@
 <html lang="zh-cn">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YAVT</title>
-  <link href="css/index.css" rel="stylesheet">
-  <link rel="shortcut icon" type="x-icon" href="icon.png">
-  <!-- Bootstrap -->
-  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-  <!-- Open Iconic -->
-  <link href="open-iconic/font/css/open-iconic-foundation.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YAVT</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <!-- Open Iconic -->
+    <link href="open-iconic/font/css/open-iconic-foundation.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
-    <a class="navbar-brand" href="#">Yet Another Values Test</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/yetanothervaluestest/YetAnotherValuesTest.github.io">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="jumbotron jumbotron-fluid text-center">
-    <p>Yet Another Values Test是一个基于8Values瞎鸡儿做的在中国语境下的站队娱乐测试。</p>
-    <!-- QR Code -->
-    <div id="qrcode-container">
-      <img src="SVGS/qrcode.svg" height="300" width="300" />
-      <p>
-        <a class="btn btn-info shadow text-white" href="shareYAVT.png" download>
-          <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
-          保存图片
-        </a>
-        <btn class="btn btn-light shadow" id="btn-share">
-          <span class="fi-share-boxed" title="share" aria-hidden="true"></span>
-        </btn>
-      </p>
-    </div>
-    <div>
-      <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
-    </div>
-  </div>
-  <!-- 模态框 -->
-
-  <div class="modal fade" id="startmodal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <!-- 模态框头部 -->
-        <div class="modal-header">
-          <h4 class="modal-title">YAVT测试说明</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
+        <a class="navbar-brand" href="https://YetAnotherValuesTest.github.io">Yet Another Values Test</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://github.com/yetanothervaluestest/YetAnotherValuesTest.github.io">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- 模态框主体 -->
-        <div class="modal-body">
-          <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
-          <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <p>Yet Another Values Test是一个基于8Values瞎鸡儿做的在中国语境下的站队娱乐测试。</p>
+        <!-- QR Code -->
+        <div id="qrcode-container">
+            <img src="SVGS/qrcode.svg" height="300" width="300" />
+            <p>
+                <a class="btn btn-info shadow text-white" href="shareYAVT.png" download>
+                    <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
+                    保存图片
+                </a>
+                <btn class="btn btn-light shadow" id="btn-share">
+                    <span class="fi-share-boxed" title="share" aria-hidden="true"></span>
+                </btn>
+            </p>
         </div>
-
-        <!-- 模态框底部 -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="location.href='quiz.html'">知道了！</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
+        <div>
+            <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
         </div>
-
-      </div>
     </div>
-  </div>
+    <!-- 模态框 -->
 
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-6 offset-lg-3">基于<strong>8Values</strong><br>使用bootstrapv4作为前端框架<br>
-      </div>
+    <div class="modal fade" id="startmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">YAVT测试说明</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
+                    <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="location.href='quiz.html'">知道了！</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-3.4.1.min.js"></script>
 
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.4.1.js"></script>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 offset-lg-3">基于<strong>8Values</strong><br>使用bootstrapv4作为前端框架<br>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
 
-  <script type="application/javascript">
-    $("document").ready(function () {
-      $("#btn-share").click(function () {
-        if (navigator.canShare && navigator.canShare({ files: ["shareYAVT.png"] })) {
-          navigator.share({
-            files: ["shareYAVT.png"],
-            title: 'Yet Another Values Test',
-            text: "基于8values的站队娱乐测试",
-          })
-            .then(() => console.log('Share was successful.'))
-            .catch((error) => console.log('Sharing failed', error));
-        } else {
-          console.log(`Your system doesn't support sharing files.`);
-        }
-      });
-    });
-  </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <script type="application/javascript">
+        $("document").ready(function () {
+            $("#btn-share").click(function () {
+                if (navigator.canShare && navigator.canShare({ files: ["shareYAVT.png"] })) {
+                    navigator.share({
+                        files: ["shareYAVT.png"],
+                        title: 'Yet Another Values Test',
+                        text: "基于8values的站队娱乐测试",
+                    })
+                        .then(() => console.log('Share was successful.'))
+                        .catch((error) => console.log('Sharing failed', error));
+                } else {
+                    console.log(`Your system doesn't support sharing files.`);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
