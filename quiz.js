@@ -2,12 +2,17 @@ $(document).ready(function () {  // Use closure, no globals
     let scores;
     let current_question = 0;
     let questions;
+    let model;
 
-    $.getJSON("questions.json", initialize).fail((xdr, err)=>{console.log("load error: "+err)});
+    initialize();
 
-    function initialize(jsonLoaded){
-        questions = jsonLoaded;
+    async function initialize(){
+        questions = await $.getJSON("questions/default.json");
+        model = await $.getJSON("models/default.json");
+        questions = questions.questions;
         scores = new Array(questions.length).fill(0);
+        // Shuffle Quesions
+        questions.sort(() => Math.random() - 0.5);
 
         $("#btn-strongly-positive")
             .click(()=>{ scores[current_question] = +1.0; next_question() });
@@ -22,14 +27,11 @@ $(document).ready(function () {  // Use closure, no globals
 
         $("#btn-prev").click(()=>{ prev_question() });
 
-        // Shuffle Quesions
-        questions.sort(() => Math.random() - 0.5);
-
         render_question();
     }
 
     function render_question() {
-        $("#question-text").html(questions[current_question].question);
+        $("#question-text").html(questions[current_question].text);
         $("#question-number").html(`第 ${current_question + 1} 题 剩余 ${questions.length - current_question - 1} 题`);
         if (current_question == 0) {
             $("#back_button").attr("disable");
@@ -56,19 +58,24 @@ $(document).ready(function () {  // Use closure, no globals
     }
 
     function results() {
-        let score = {econ: 0, dipl: 0, govt: 0, scty: 0, envo: 0};
-        let max_score = {...score};
-        for (let i = 0; i < scores.length; i += 1 ) {
-            for (let key of Object.keys(score)){
-                score[key] += scores[i] * questions[i].effect[key];
-                max_score[key] += Math.abs(questions[i].effect[key]);
-            }    
+        let score = new Array(5).fill(0);
+        let max_score = [...score];
+        for (let i = 0; i < scores.length; i ++ ) {
+            for (let key = 0; key < 5; key ++){
+                score[key] += scores[i] * questions[i].evaluation[key];
+                max_score[key] += Math.abs(questions[i].evaluation[key]);
+            }
         }
 
-        for (let key of Object.keys(max_score)){
+        for (let key = 0; key < 5; key ++ ){
             score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
             score[key] = Math.round(score[key] * 100);
-        }  
-        location.href = "results.html?" + $.param(score); 
+        } 
+
+        let request = {
+            model: "default",
+            score: score.join("$")
+        };
+        location.href = "result.html?" + $.param(request); 
     }
 });

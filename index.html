@@ -45,9 +45,10 @@
                     <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
                     保存图片
                 </a>
-                <btn class="btn btn-light shadow" id="btn-share">
-                    <span class="fi-share-boxed" title="share" aria-hidden="true"></span>
-                </btn>
+                <a class="btn btn-light shadow" href="http://www.twitter.com/share?url=yetanothervaluestest.github.io">
+                    <span class="icon-twitter" title="share" aria-hidden="true"></span>
+                    Tweet
+                </a>
             </p>
         </div>
         <div>
@@ -94,24 +95,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
-
-    <script type="application/javascript">
-        $("document").ready(function () {
-            $("#btn-share").click(function () {
-                if (navigator.canShare && navigator.canShare({ files: ["shareYAVT.png"] })) {
-                    navigator.share({
-                        files: ["shareYAVT.png"],
-                        title: 'Yet Another Values Test',
-                        text: "基于8values的站队娱乐测试",
-                    })
-                        .then(() => console.log('Share was successful.'))
-                        .catch((error) => console.log('Sharing failed', error));
-                } else {
-                    console.log(`Your system doesn't support sharing files.`);
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
