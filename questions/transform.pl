@@ -1,16 +1,16 @@
-#/usr/bin/env perl
+#!/usr/bin/env perl
 # this script will transform 8values-like js into json
 use v5.24;
 
 use JSON::PP;
 
-my $json = JSON::PP->new->canonical(1);
+my $json = JSON::PP->new->canonical(1)->pretty(1);
 
 my $questions = decode_json do {local $/; <>}; # read entire file
 
 my $output = {};
-$output->{"model"} = "default";
-$output->{"name"} = "default";
+$output->{"model"} = "yavt-5-axis";
+$output->{"name"} = "NAME_TO_FILL";
 $output->{"questions"} = [];
 
 for my $question (@$questions) {

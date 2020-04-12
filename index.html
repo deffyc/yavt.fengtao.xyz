@@ -73,7 +73,19 @@
 
                 <!-- 模态框底部 -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="location.href='quiz.html?question=yetanothervaluestest'">知道了！</button>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" 
+                                type="button" 
+                                id="btn-dropdown"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                            选择版本
+                        </button>
+                        <div id="version-list" class="dropdown-menu" aria-labelledby="btn-dropdown">
+
+                        </div>
+                    </div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
                 </div>
 
@@ -82,6 +94,20 @@
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            const select = $("#version-list");
+            const question_index = {
+                "YAVT 0.1.0": "yavt_0_1_0",
+                "YAVT 0.2.1": "yavt_0_2_1",
+                "8 Values": "8-values",
+            };
+            for (let [question_name, question_file] of Object.entries(question_index)){
+                select.append(`<a class='dropdown-item' href='quiz.html?question=${question_file}'>${question_name}</a>`)
+            }
+        });
+    </script>
 </body>
 </html>
