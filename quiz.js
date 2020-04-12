@@ -4,6 +4,7 @@ $(document).ready(function () {  // Use closure, no globals
     let questions;
     let model;
     let model_file;
+    let quiz_name = "unknown";
 
     initialize();
 
@@ -24,6 +25,7 @@ $(document).ready(function () {  // Use closure, no globals
         model = await $.getJSON(`models/${questions.model}.json`)
             .fail(()=>console.log("failed to load model"));
         model_file = questions.model;
+        quiz_name = questions.name;
         questions = questions.questions;
         scores = new Array(questions.length).fill(0);
         // Shuffle Quesions
@@ -90,7 +92,8 @@ $(document).ready(function () {  // Use closure, no globals
 
         let request = {
             model: model_file,
-            score: score.join("$")
+            score: score.join("$"),
+            question: quiz_name
         };
         location.href = "result.html?" + $.param(request); 
     }

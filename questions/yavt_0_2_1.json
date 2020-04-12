@@ -1,6 +1,6 @@
 {
    "model" : "yavt-5-axis",
-   "name" : "NAME_TO_FILL",
+   "name" : "yavt-0.2.1",
    "questions" : [
       {
          "evaluation" : [ 0, 0, 10, 0, 0 ],

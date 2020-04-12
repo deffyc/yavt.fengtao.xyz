@@ -1,6 +1,7 @@
 $(document).ready(function () {
     let model;
     let score;
+    let question_name = "unknown";
 
     async function initialize() {
         let url = decodeURIComponent(window.location.search.substring(1));
@@ -15,6 +16,9 @@ $(document).ready(function () {
                 value.split("$").map((x) => parseInt(x)).forEach((value, index)=>{
                     score[index] = value % 101;
                 });
+            }
+            else if (key == "question") {
+                question_name = value;
             }
         }
 
@@ -127,7 +131,7 @@ $(document).ready(function () {
             y: y + 60,
             fill: "black"
         }).font(font_ideology);
-        svg.text(`model: ${model.name}`).attr({
+        svg.text(`quiz set: ${question_name}`).attr({
             x: 20,
             y: height - 80,
             fill: "black"
