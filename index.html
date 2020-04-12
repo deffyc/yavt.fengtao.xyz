@@ -11,13 +11,13 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <!-- Open Iconic -->
-    <link href="open-iconic/font/css/open-iconic-foundation.css" rel="stylesheet">
+    <link href="open-iconic/font/css/open-iconic-foundation.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
-        <a class="navbar-brand" href="https://YetAnotherValuesTest.github.io">Yet Another Values Test</a>
+        <a class="navbar-brand" href="/">Yet Another Values Test</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,8 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link"
-                        href="https://github.com/yetanothervaluestest/YetAnotherValuesTest.github.io">Github</a>
+                    <a class="nav-link" href="https://github.com/jj11hh/yavt.fengtao.xyz">Github</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
@@ -35,11 +34,11 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center">
-        <p>Yet Another Values Test是一个基于8Values瞎鸡儿做的在中国语境下的站队娱乐测试。</p>
+    <div class="jumbotron jumbotron-fluid text-center mb-0">
+        <p>Yet Another Values Test是一个基于8Values的在中国语境下的测试。</p>
         <!-- QR Code -->
         <div id="qrcode-container">
-            <img src="SVGS/qrcode.svg" height="300" width="300" />
+            <img src="SVGS/qrcode.svg" id="qrcode" alt="qrcode"/>
             <p>
                 <a class="btn btn-info shadow text-white" href="shareYAVT.png" download>
                     <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
@@ -83,12 +82,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-6 offset-lg-3">基于<strong>8Values</strong><br>使用bootstrapv4作为前端框架<br>
-            </div>
-        </div>
-    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.4.1.min.js"></script>
 

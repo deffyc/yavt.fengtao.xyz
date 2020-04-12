@@ -23,6 +23,10 @@ nav a {
     background-color: #FFF;
 }
 
+#qrcode {
+    max-width: 300px;
+}
+
 .icon-twitter {
     background-image: url("../SVGS/Twitter_Logo_WhiteOnImage.svg");
     width:1rem;
@@ -30,3 +34,4 @@ nav a {
     display: inline-block;
     background-size: cover;
 }
+

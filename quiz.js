@@ -34,9 +34,9 @@ $(document).ready(function () {  // Use closure, no globals
         $("#question-text").html(questions[current_question].text);
         $("#question-number").html(`第 ${current_question + 1} 题 剩余 ${questions.length - current_question - 1} 题`);
         if (current_question == 0) {
-            $("#back_button").attr("disable");
+            $("#btn-prev").attr("disabled", "disabled");
         } else {
-            $("#back_button").removeAttr("disable");
+            $("#btn-prev").removeAttr("disabled");
         }
     }
 
