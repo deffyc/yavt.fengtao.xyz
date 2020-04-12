@@ -145,7 +145,7 @@ $(document).ready(function () {
             width: 200,
             height: 200,
         });
-        svg.text("基于8 value的倾向测试").attr({
+        svg.text("基于8values的倾向测试").attr({
             x: 370,
             y: height - 60,
             fill: "black"
