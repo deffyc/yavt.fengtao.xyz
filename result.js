@@ -9,9 +9,12 @@ $(document).ready(function () {
             let [key, value] = pair.split("=")
             if (key == "model") {
                 model = await $.getJSON(`models/${value}.json`);
+                score = new Array(model.dimensions.length).fill(50);
             }
             else if (key == "score") {
-                score = value.split("$").map((x) => parseInt(x));
+                value.split("$").map((x) => parseInt(x)).forEach((value, index)=>{
+                    score[index] = value % 101;
+                });
             }
         }
 
@@ -206,7 +209,6 @@ $(document).ready(function () {
     initialize();
 
     $("#btn-result-save").click(function () {
-        $("#btn-result-save").attr("disabled", "disabled");
         let canvas = document.createElement("canvas");
         canvas.width = 600;
         canvas.height = 800;
@@ -226,7 +228,6 @@ $(document).ready(function () {
             a.download = "yavt.png";
             a.href = canvas.toDataURL("image/png");
             a.click();
-            //$("#btn-result-save").removeAttr("disabled");
         };
     });
 });

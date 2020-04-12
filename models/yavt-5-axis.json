@@ -1,5 +1,5 @@
 {
-    "name": "default",
+    "name": "yavt-5-axis",
     "dimensions-en": [
         "FreeMarket-PlannedEconomy", 
         "Statism-Internationalism",
@@ -9,10 +9,10 @@
     ],
     "dimensions": [
         "计划-市场", 
-        "国际-国家",
-        "自由-专制",
-        "进步-保守",
-        "环保-工业"
+        "世界-国家",
+        "自由-权威",
+        "进步-守成",
+        "环保-发展"
     ],
     "explanations": [
         ["共产主义", "社会主义", "偏向平等", "中立", "偏向市场", "资本主义", "自由放任"],

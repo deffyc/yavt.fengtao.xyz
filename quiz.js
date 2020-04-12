@@ -3,12 +3,27 @@ $(document).ready(function () {  // Use closure, no globals
     let current_question = 0;
     let questions;
     let model;
+    let model_file;
 
     initialize();
 
     async function initialize(){
-        questions = await $.getJSON("questions/default.json");
-        model = await $.getJSON("models/default.json");
+        let url = decodeURIComponent(window.location.search.substring(1));
+        let params = url.split("&");
+        for (let pair of params) {
+            let [key, value] = pair.split("=")
+            if (key == "question") {
+                questions = await $.getJSON(`questions/${value}.json`)
+                    .fail(()=>console.log("failed to load questions"));
+            }
+        }
+
+        if (questions == undefined) {
+            console.log("failed to parse parameters");
+        }
+        model = await $.getJSON(`models/${questions.model}.json`)
+            .fail(()=>console.log("failed to load model"));
+        model_file = questions.model;
         questions = questions.questions;
         scores = new Array(questions.length).fill(0);
         // Shuffle Quesions
@@ -58,22 +73,23 @@ $(document).ready(function () {  // Use closure, no globals
     }
 
     function results() {
-        let score = new Array(5).fill(0);
+        const d = model.dimensions.length;
+        let score = new Array(d).fill(0);
         let max_score = [...score];
         for (let i = 0; i < scores.length; i ++ ) {
-            for (let key = 0; key < 5; key ++){
+            for (let key = 0; key < d; key ++){
                 score[key] += scores[i] * questions[i].evaluation[key];
                 max_score[key] += Math.abs(questions[i].evaluation[key]);
             }
         }
 
-        for (let key = 0; key < 5; key ++ ){
+        for (let key = 0; key < d; key ++ ){
             score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
             score[key] = Math.round(score[key] * 100);
         } 
 
         let request = {
-            model: "default",
+            model: model_file,
             score: score.join("$")
         };
         location.href = "result.html?" + $.param(request); 

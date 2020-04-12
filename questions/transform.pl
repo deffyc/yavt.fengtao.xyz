@@ -1,4 +1,5 @@
 #/usr/bin/env perl
+# this script will transform 8values-like js into json
 use v5.24;
 
 use JSON::PP;

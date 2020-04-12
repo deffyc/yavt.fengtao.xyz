@@ -1,0 +1,286 @@
+{
+    "model": "8-values",
+    "name": "8-values",
+    "questions": [
+        {
+            "text": "Oppression by corporations is more of a concern than oppression by governments.",
+            "evaluation": [10, 0, 0, 0]
+        },
+        {
+            "text": "It is necessary for the government to intervene in the economy to protect consumers.",
+            "evaluation": [ 10, 0, 0, 0]
+        },
+        {
+            "text": "The freer the markets, the freer the people.",
+            "evaluation": [ -10, 0, 0, 0 ]
+        },
+        {
+            "text": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
+            "evaluation": [ -10, 0, 0, 0 ]
+        },
+        {
+            "text": "Publicly-funded research is more beneficial to the people than leaving it to the market.",
+            "evaluation": [ 10, 0, 0, 10 ]
+        },
+        {
+            "text": "Tariffs on international trade are important to encourage local production.",
+            "evaluation": [ 5, 0, -10, 0 ]
+        },
+        {
+            "text": "From each according to his ability, to each according to his needs.",
+            "evaluation": [ 10, 0, 0, 0 ]
+        },
+        {
+            "text": "It would be best if social programs were abolished in favor of private charity.",
+            "evaluation": [ -10, 0, 0, 0 ]
+        },
+        {
+            "text": "Taxes should be increased on the rich to provide for the poor.",
+            "evaluation": [ 10, 0, 0, 0 ]
+        },
+        {
+            "text": "Inheritance is a legitimate form of wealth.",
+            "evaluation": [ -10, 0, 0, -5 ]
+        },
+        {
+            "text": "Basic utilities like roads and electricity should be publicly owned.",
+            "evaluation": [ 10, 0, 0, 0 ]
+        },
+        {
+            "text": "Government intervention is a threat to the economy.",
+            "evaluation": [ -10, 0, 0, 0 ]
+        },
+        {
+            "text": "Those with a greater ability to pay should receive better healthcare.",
+            "evaluation": [ -10, 0, 0, 0 ]
+        },
+        {
+            "text": "Quality education is a right of all people.",
+            "evaluation": [ 10, 0, 0, 5 ]
+        },
+        {
+            "text": "The means of production should belong to the workers who use them.",
+            "evaluation": [ 10, 0, 0, 0 ]
+        },
+        {
+            "text": "The United Nations should be abolished.",
+            "evaluation": [ 0, -10, -5, 0 ]
+        },
+        {
+            "text": "Military action by our nation is often necessary to protect it.",
+            "evaluation": [ 0, -10, -10, 0 ]
+        },
+        {
+            "text": "I support regional unions, such as the European Union.",
+            "evaluation": [ -5, 10, 10, 5 ]
+        },
+        {
+            "text": "It is important to maintain our national sovereignty.",
+            "evaluation": [ 0, -10, -5, 0 ]
+        },
+        {
+            "text": "A united world government would be beneficial to mankind.",
+            "evaluation": [ 0, 10, 0, 0 ]
+        },
+        {
+            "text": "It is more important to retain peaceful relations than to further our strength.",
+            "evaluation": [ 0, 10, 0, 0 ]
+        },
+        {
+            "text": "Wars do not need to be justified to other countries.",
+            "evaluation": [ 0, -10, -10, 0 ]
+        },
+        {
+            "text": "Military spending is a waste of money.",
+            "evaluation": [ 0, 10, 10, 0 ]
+        },
+        {
+            "text": "International aid is a waste of money.",
+            "evaluation": [ -5, -10, 0, 0 ]
+        },
+        {
+            "text": "My nation is great.",
+            "evaluation": [ 0, -10, 0, 0 ]
+        },
+        {
+            "text": "Research should be conducted on an international scale.",
+            "evaluation": [ 0, 10, 0, 10 ]
+        },
+        {
+            "text": "Governments should be accountable to the international community.",
+            "evaluation": [ 0, 10, 5, 0 ]
+        },
+        {
+            "text": "Even when protesting an authoritarian government, violence is not acceptable.",
+            "evaluation": [ 0, 5, -5, 0 ]
+        },
+        {
+            "text": "My religious values should be spread as much as possible.",
+            "evaluation": [ 0, -5, -10, -10 ]
+        },
+        {
+            "text": "Our nation's values should be spread as much as possible.",
+            "evaluation": [ 0, -10, -5, 0 ]
+        },
+        {
+            "text": "It is very important to maintain law and order.",
+            "evaluation": [ 0, -5, -10, -5 ]
+        },
+        {
+            "text": "The general populace makes poor decisions.",
+            "evaluation": [ 0, 0, -10, 0 ]
+        },
+        {
+            "text": "Victimless crimes (such as drug use) should not be crimes at all.",
+            "evaluation": [ 0, 0, 10, 0 ]
+        },
+        {
+            "text": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
+            "evaluation": [ 0, 0, -10, 0 ]
+        },
+        {
+            "text": "Government surveillance is necessary in the modern world.",
+            "evaluation": [ 0, 0, -10, 0 ]
+        },
+        {
+            "text": "The very existence of the state is a threat to our liberty.",
+            "evaluation": [ 0, 0, 10, 0 ]
+        },
+        {
+            "text": "Regardless of political opinions, it is important to side with your country.",
+            "evaluation": [ 0, -10, -10, -5 ]
+        },
+        {
+            "text": "All authority should be questioned.",
+            "evaluation": [ 0, 0, 10, 5 ]
+        },
+        {
+            "text": "A hierarchical state is best.",
+            "evaluation": [ 0, 0, -10, 0 ]
+        },
+        {
+            "text": "It is important that the government follows the majority opinion, even if it is wrong.",
+            "evaluation": [ 0, 0, 10, 0 ]
+        },
+        {
+            "text": "The stronger the leadership, the better.",
+            "evaluation": [ 0, -10, -10, 0 ]
+        },
+        {
+            "text": "Democracy is more than a decision-making process.",
+            "evaluation": [ 0, 0, 10, 0 ]
+        },
+        {
+            "text": "Environmental regulations are essential.",
+            "evaluation": [ 5, 0, 0, 10 ]
+        },
+        {
+            "text": "A better world will come from automation, science, and technology.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "Children should be educated in religious or traditional values.",
+            "evaluation": [ 0, 0, -5, -10 ]
+        },
+        {
+            "text": "Traditions are of no value on their own.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "Religion should play a role in government.",
+            "evaluation": [ 0, 0, -10, -10 ]
+        },
+        {
+            "text": "Churches should be taxed the same way other institutions are taxed.",
+            "evaluation": [ 5, 0, 0, 10 ]
+        },
+        {
+            "text": "Climate change is currently one of the greatest threats to our way of life.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "It is important that we work as a united world to combat climate change.",
+            "evaluation": [ 0, 10, 0, 10 ]
+        },
+        {
+            "text": "Society was better many years ago than it is now.",
+            "evaluation": [ 0, 0, 0, -10 ]
+        },
+        {
+            "text": "It is important that we maintain the traditions of our past.",
+            "evaluation": [ 0, 0, 0, -10 ]
+        },
+        {
+            "text": "It is important that we think in the long term, beyond our lifespans.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "Reason is more important than maintaining our culture.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "Drug use should be legalized or decriminalized.",
+            "evaluation": [ 0, 0, 10, 2 ]
+        },
+        {
+            "text": "Same-sex marriage should be legal.",
+            "evaluation": [ 0, 0, 10, 10 ]
+        },
+        {
+            "text": "No cultures are superior to others.",
+            "evaluation": [ 0, 10, 5, 10 ]
+        },
+        {
+            "text": "Sex outside marriage is immoral.",
+            "evaluation": [ 0, 0, -5, -10 ]
+        },
+        {
+            "text": "If we accept migrants at all, it is important that they assimilate into our culture.",
+            "evaluation": [ 0, 0, -5, -10 ]
+        },
+        {
+            "text": "Abortion should be prohibited in most or all cases.",
+            "evaluation": [ 0, 0, -10, -10 ]
+        },
+        {
+            "text": "Gun ownership should be prohibited for those without a valid reason.",
+            "evaluation": [ 0, 0, -10, 0 ]
+        },
+        {
+            "text": "I support single-payer, universal healthcare.",
+            "evaluation": [ 10, 0, 0, 0 ]
+        },
+        {
+            "text": "Prostitution should be illegal.",
+            "evaluation": [ 0, 0, -10, -10 ]
+        },
+        {
+            "text": "Maintaining family values is essential.",
+            "evaluation": [ 0, 0, 0, -10 ]
+        },
+        {
+            "text": "To chase progress at all costs is dangerous.",
+            "evaluation": [ 0, 0, 0, -10 ]
+        },
+        {
+            "text": "Genetic modification is a force for good, even on humans.",
+            "evaluation": [ 0, 0, 0, 10 ]
+        },
+        {
+            "text": "We should open our borders to immigration.",
+            "evaluation": [ 0, 10, 10, 0 ]
+        },
+        {
+            "text": "Governments should be as concerned about foreigners as they are about their own citizens.",
+            "evaluation": [ 0, 10, 0, 0 ]
+        },
+        {
+            "text": "All people - regardless of factors like culture or sexuality - should be treated equally.",
+            "evaluation": [ 10, 10, 10, 10 ]
+        },
+        {
+            "text": "It is important that we further my group's goals above all others.",
+            "evaluation": [ -10, -10, -10, -10 ]
+        }
+    ]
+}
