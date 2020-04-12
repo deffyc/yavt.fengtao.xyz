@@ -115,12 +115,12 @@ $(document).ready(function () {
         let y = model.dimensions.length * Y_STEP;
         let ideology = findIdeology(score, model.ideologies);
         svg.text("最接近的意识形态:").attr({
-            x: 50,
+            x: 30,
             y: y + 30,
             fill: "black"
         }).font(font_l);
         svg.text(ideology).attr({
-            x: 100,
+            x: 30,
             y: y + 60,
             fill: "black"
         }).font(font_ideology);
